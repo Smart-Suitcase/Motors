@@ -39,6 +39,6 @@ private:
     byte _right_speed;
     Motors::Direction _left_direction;
     Motors::Direction _right_direction;
-}
+};
 
 #endif

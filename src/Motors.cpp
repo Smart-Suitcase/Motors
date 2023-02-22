@@ -9,8 +9,8 @@ Motors::Motors(uint8_t pin_ENA, uint8_t pin_ENB, uint8_t pin_IN1, uint8_t pin_IN
     _pin_IN4 = pin_IN4;
     _left_speed = 0;
     _right_speed = 0;
-    _left_direction = STOP;
-    _right_direction = STOP;
+    _left_direction = BREAK;
+    _right_direction = BREAK;
 
     pinMode(_pin_ENA, OUTPUT);
     pinMode(_pin_ENB, OUTPUT);
@@ -31,11 +31,11 @@ void Motors::setRightSpeed(unsigned short pwm_value) {
 }
 
 unsigned short Motors::getLeftSpeed() {
-    return (_left_direction != STOP) ? _left_speed : 0;
+    return (_left_direction != BREAK) ? _left_speed : 0;
 }
 
 unsigned short Motors::getRightSpeed() {
-    return (_left_direction != STOP) ? _left_speed : 0;
+    return (_left_direction != BREAK) ? _left_speed : 0;
 }
 
 void Motors::setLeftToForward() {
