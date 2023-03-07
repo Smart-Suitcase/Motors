@@ -1,5 +1,5 @@
-#ifndef SUITCASE_MOTORS_H
-#define SUITCASE_MOTORS_H
+#ifndef MOTORS_H
+#define MOTORS_H
 
 #include <Arduino.h>
 
