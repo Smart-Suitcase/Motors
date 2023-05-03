@@ -1,4 +1,4 @@
-#include "Motors.h"
+#include "Suitcase_motors.h"
 
 Motors::Motors(uint8_t pin_ENA, uint8_t pin_ENB, uint8_t pin_IN1, uint8_t pin_IN2, uint8_t pin_IN3, uint8_t pin_IN4) {
     _pin_ENA = pin_ENA;
