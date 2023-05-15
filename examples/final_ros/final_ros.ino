@@ -21,12 +21,12 @@ const unsigned int pin_IN4 = 10;
 
 #define TRIGGER_PIN  4
 #define ECHO_PIN     5
-#define MAX_DISTANCE 2000
+#define MAX_DISTANCE 200
 NewPing sonar(TRIGGER_PIN, ECHO_PIN, MAX_DISTANCE);
 std_msgs::String mode_msg;
 int low_anti_bounce = 5;
 int high_anti_bounce = 5;
-int cycle_divide = 50;  // Wait 50ms between pings (recommended by NewPing library)
+int cycle_divide = 100;  // Wait 50ms between pings (recommended by NewPing library)
 
 //initialize motors
 Motors motors(pin_ENA, pin_ENB, pin_IN1, pin_IN2, pin_IN3, pin_IN4);
